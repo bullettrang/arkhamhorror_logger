@@ -4,7 +4,7 @@ import BannerImg from './assets/banner.jpg';
 import LedgerImg from './assets/blackleatherbackground.png'
 import LogoImg from './assets/lcgLogo.png'
 import ParchImg from './assets/parchmentbackground.jpg'
-import DifficultyButton from './DifficultyButton';
+import DifficultyButtons from './DifficultyButtons';
 import styled from 'styled-components';
 
 
@@ -74,7 +74,7 @@ class App extends Component {
           <ScenarioContainer>
           <NOZTitle>Night of the Zealot</NOZTitle>
           <ScenarioText>Select a Difficulty</ScenarioText>
-          <DifficultyButton/>
+          <DifficultyButtons/>
           </ScenarioContainer>
 
         </MainContainer>

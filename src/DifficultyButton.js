@@ -1,8 +1,8 @@
 import React from 'react';
-import EasyImg from './assets/easybutton.png';
+
 import styled from 'styled-components';
 
-const EasyIcon = styled.img`
+const IconImg = styled.img`
 width:50px
 height:50px
 `
@@ -12,7 +12,7 @@ width:50px
 height:50px
 border:none;
 padding: 0;
-margin: 0;
+margin: 5% 5%;
 vertical-align: top;
 background:none;
 img{
@@ -22,9 +22,9 @@ img{
 }
 `
 
- const DifficultyButton =()=>{
+ const DifficultyButton =(props)=>{
     return(
-        <DiffButton onClick={()=>console.log('clicked easy')}><EasyIcon src={EasyImg}/></DiffButton>
+        <DiffButton onClick={()=>console.log('clicked easy')}><IconImg src={props.src}/></DiffButton>
     )
 }
 
