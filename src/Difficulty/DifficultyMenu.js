@@ -11,6 +11,7 @@ const ScenarioText = styled.p`
     font-family: 'Crimson Text', serif;
 `;
 
+//A Difficulty object, icon image, setting , and brief description
 let diffObjs=[
     {
         img: EasyImg,
@@ -37,22 +38,28 @@ class DifficultyMenu extends Component{
     constructor(props){
         super(props);
         this.state={
-            displayed:false
+            displayed:false,
+            selectedSetting:null
         }
     }
     
     displayTokens=(clicked,setting)=>{
         if(clicked){
-            //this.setState({displayed:!this.state.displayed});
             console.log('callback from child component '+setting);
+            this.setState({selectedSetting:setting});
+
         }
         
     }
+
     render(){
+        let tokens=null;
+
         return(
             <div>
                 <ScenarioText>Select a Difficulty</ScenarioText>
                 <DifficultyButtons diffs={diffObjs} callback={this.displayTokens}/>
+                {tokens}
             </div>
         );
     }

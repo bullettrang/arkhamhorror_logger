@@ -21,17 +21,11 @@ const DiffButton = styled.button`
     vertical-align: top;
     background:none;
     img{
-    display:block;
-    width:50px
-    height:50px
+        display:block;
+        width:50px
+        height:50px
     }
 `
-
-//  const DifficultyButton =(props)=>{
-//     return(
-//         <DiffButton onClick={props.clicked}><IconImg src={props.src}/></DiffButton>
-//     )
-// }
 
 class DifficultyButton extends Component{
     constructor(props){
@@ -50,7 +44,7 @@ class DifficultyButton extends Component{
         return(
             <ButtonWrapper>
                 <DiffButton 
-                    onClick={this.handleClick}>
+                    onMouseUp={this.handleClick}>
                         <IconImg 
                             src={this.props.src}/>
                 </DiffButton>
