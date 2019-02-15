@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import theGatheringIcon from './assets/the_gathering_icon.png';
+
 const ScenarioTitleWrapper = styled.div`
     display:flex;
     flex-direction:row;
@@ -16,7 +16,7 @@ const ScenarioTitleWrapper = styled.div`
   `;
 
   const ScenarioIcon=styled.div`
-    background-image: url(${props => props.bgImg || ""});
+    background-image: url(${props => props.iconImg});
     background-size:contain;
     background-repeat:no-repeat;
     width:3em;
@@ -29,8 +29,8 @@ const ScenarioTitleWrapper = styled.div`
   const ScenarioTitle = (props)=>{
       return(
           <ScenarioTitleWrapper className="scenario-title">
-            <TitleStyled>The Gathering</TitleStyled>
-            <ScenarioIcon bgImg={theGatheringIcon}/>
+            <TitleStyled>{props.title}</TitleStyled>
+            <ScenarioIcon iconImg={props.iconImg}/>
             
           </ScenarioTitleWrapper>
       );

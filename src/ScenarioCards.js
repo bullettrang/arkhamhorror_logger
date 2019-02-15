@@ -9,7 +9,12 @@ const ScenarioWrapper = styled.div`
     display:flex;
     padding-bottom:5em;
     flex-direction:row;
-    
+    @media (max-width: 500px) {
+        flex-direction:column;
+        flex-wrap:wrap;
+        align-items:center;
+
+      }
 `
 
 class ScenarioCards extends Component{
@@ -17,11 +22,22 @@ class ScenarioCards extends Component{
         super(props);
     }
     render(){
+        // title:'The Gathering',
+        // icon:gatheringIcon,
+        // background_image:gatheringBackgroundImage,
+        let scenarioOutputs= this.props.scenarioObjs;
+        scenarioOutputs.map((e)=>{
+            return (
+                <ScenarioCard titleText={e.title} bgImg={e.background_image} iconImg={e.icon}/>
+            )
+        })
         return(
             <ScenarioWrapper id="scenario-cards">
-                <ScenarioCard/>
-                <ScenarioCard/>
-                <ScenarioCard/>
+                {        scenarioOutputs.map((e)=>{
+            return (
+                <ScenarioCard titleText={e.title} bgImg={e.background_image} iconImg={e.icon}/>
+            )
+        })}
             </ScenarioWrapper>
         );
     }

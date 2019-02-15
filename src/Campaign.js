@@ -2,10 +2,8 @@ import React,{Component} from 'react';
 import DifficultyMenu from './Difficulty/DifficultyMenu';
 import styled from 'styled-components';
 import ParchImg from './assets/parchmentbackground.jpg'
-import gatheringImg from './assets/the_gathering_icon.png';
-import midnightImg from './assets/the_midnight_masks_icon.png';
-import devourerImg from './assets/the_devourer_below_icon.png';
 import ScenarioCards from './ScenarioCards';
+import ScenarioObjs from './ScenarioObjects';
 //TODO: I want to add a hover event that displays 
 // the chaos tokens when hovering over difficulty
 const CampaignHeader = styled.h1`
@@ -14,12 +12,13 @@ const CampaignHeader = styled.h1`
     text-align:center;
 `;
 
-const scenarioTitles=['The Gathering','The Midnight Masks','The Devourer Below'];
+
+const scenarios= ScenarioObjs;
 
 const CampaignContainer = styled.div`
     position:relative;
     width:1000px;
-    height:850px;
+
     background-image:url(${ParchImg});
     border-radius: 10px 10px 10px 10px;
     border: 0px solid #000000;
@@ -43,11 +42,9 @@ class Campaign extends Component{
     }
     render(){
         return(
-        <CampaignContainer>
+        <CampaignContainer className="campaign">
             <CampaignHeader>Night of the Zealot</CampaignHeader>
-            <ScenarioCards>
-
-            </ScenarioCards>
+            <ScenarioCards scenarioObjs={scenarios}/>
             <DifficultyMenu/>
       </CampaignContainer>
         );
