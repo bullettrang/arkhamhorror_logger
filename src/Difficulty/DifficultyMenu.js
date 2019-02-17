@@ -54,11 +54,10 @@ class DifficultyMenu extends Component{
 
     render(){
         let tokens=null;
-
         return(
             <div>
                 <ScenarioText>Select a Difficulty</ScenarioText>
-                <DifficultyButtons diffs={diffObjs} callback={this.displayTokens}/>
+                <DifficultyButtons diffs={diffObjs} callback={this.props.callback}/>
                 {tokens}
             </div>
         );

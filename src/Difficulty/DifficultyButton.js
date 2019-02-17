@@ -35,16 +35,15 @@ class DifficultyButton extends Component{
         }
     }
     handleClick=()=>{
-        console.log('handleClick [DifficultyButton]');
         this.setState({clicked:!this.state.clicked},()=>{
-            this.props.callBack(this.state.clicked,this.props.setting);
+            this.props.callback(this.props.setting);
         });
     }
     render(){
         return(
             <ButtonWrapper>
                 <DiffButton 
-                    onMouseUp={this.handleClick}>
+                    onClick={this.handleClick}>
                         <IconImg 
                             src={this.props.src}/>
                 </DiffButton>
