@@ -42,7 +42,7 @@ const ScenarioCard =(props)=>{
                 <AgendaProfilePic bgImg={props.bgImg}/>
             </div>
             <p>{"rating system"}</p>
-            <p>{"instructions"}</p>
+            <p>{"Set Up Instructions"}</p>
         </ScenarioCardWrapper>
     );
 }

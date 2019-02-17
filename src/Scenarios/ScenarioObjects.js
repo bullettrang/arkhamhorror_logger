@@ -20,8 +20,10 @@ import cultist from '../assets/hardbutton.png';
 import tablet from '../assets/tablet.png';
 import tentacle from '../assets/expertbutton.png';
 import eldersign from '../assets/easybutton.png';
+
+//Scenario objects
 const ScenarioObjs=[
-    {
+    {   
     NOZ: 
         {
            scenarios: 
@@ -42,7 +44,8 @@ const ScenarioObjs=[
                         background_image:devourerBackdgroundImage,
                     },
             ],
-            difficulties:[
+            difficulties:
+            [
                 {
                     label:'easy',
                     tokens:[onePlus,onePlus,zero,zero,zero,minusOne,minusOne,minusOne,minusTwo,minusTwo,skull,skull,cultist,tablet,tentacle,eldersign]
