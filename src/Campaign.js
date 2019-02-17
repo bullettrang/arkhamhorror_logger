@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import ParchImg from './assets/parchmentbackground.jpg'
 import ScenarioCards from './Scenarios/ScenarioCards';
 import ScenarioObjs from './Scenarios/ScenarioObjects';
+import {NOZ_TITLES} from './Scenarios/ScenarioObjects';
+import {SetUpContainer} from './SetUp';
 //TODO: I want to add a hover event that displays 
 // the chaos tokens when hovering over difficulty
 const CampaignHeader = styled.h1`
@@ -15,6 +17,7 @@ const CampaignHeader = styled.h1`
 
 const scenarios= ScenarioObjs[0].NOZ.scenarios;
 const difficulties=ScenarioObjs[0].NOZ.difficulties;
+const setups = ScenarioObjs[0].NOZ.setup;
 const CampaignContainer = styled.div`
     position:relative;
     width:1000px;
@@ -37,8 +40,8 @@ const TokenContainer = styled.div`
 `;
 
 class Campaign extends Component{
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
           showMenu: false,
           chosenSetting:null,
@@ -46,15 +49,20 @@ class Campaign extends Component{
           scenarios:scenarios,
           difficulties:difficulties,
           displayedTokens:null,
+          clickedSetUp:false,
+          chosenSetUp:null,
+          setups:setups,
+          displayedSetUp:null,
         }
         this.showTokens=this.showTokens.bind(this);
+        this.setUpHandler=this.setUpHandler.bind(this);
+        this.displaySetUpInstructions=this.displaySetUpInstructions.bind(this);
       }
     
     showTokens(setting){
-
             this.setState({chosenSetting:setting});
             //TODO: NOt displaying smoothly
-            let chosenDifficulty={};
+
             for(let obj of this.state.difficulties){
                 if(obj.label===this.state.chosenSetting){
                     console.log('found chosen setting');
@@ -62,13 +70,36 @@ class Campaign extends Component{
                 }
             }
     }
+
+    setUpHandler(clickedSetUp){
+        console.log('setUpHandler()');
+        this.setState({clickedSetUp:!this.state.clickedSetUp});
+
+        //whichever set up button is clicked, display that instruction procedure
+        this.setState({chosenSetUp:clickedSetUp},()=>{
+            console.log("chosen SETUP IS "+this.state.chosenSetUp);
+        });
+        this.displaySetUpInstructions();
+    }
+
+    displaySetUpInstructions(){
+        for(let setup of setups){
+            if(setup.label===this.state.chosenSetUp){
+                this.setState({displayedSetUp:setup.procedures},()=>{console.log('displayedSetUp has been init '+setup.label)})
+            }
+        }
+    }
+
+
     render(){
+        let instructionOutput = this.state.displayedSetUp !==null ? this.state.displayedSetUp.map(e=><li key={e}>{e}</li>) :null;
         let tokenOutput = this.state.displayedTokens===null ? null: this.state.displayedTokens;
         return(
         <CampaignContainer className="campaign">
             <CampaignHeader>Night of the Zealot</CampaignHeader>
-            <ScenarioCards scenarioObjs={this.state.scenarios}/>
+            <ScenarioCards scenarioObjs={this.state.scenarios} setUpCallBack={this.setUpHandler}/>
             <DifficultyMenu callback={this.showTokens}/>
+            {<ul>{instructionOutput}</ul>}
             <TokenContainer>
                 {   
                     tokenOutput!==null?

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import ScenarioCard from './ScenarioCard';
 
+
 const ScenarioWrapper = styled.div`
     border:1px solid black;
     width:100%;
@@ -23,18 +24,22 @@ class ScenarioCards extends Component{
     }
     render(){
         let scenarioOutputs= this.props.scenarioObjs;
-        scenarioOutputs.map((e)=>{
-            return (
-                <ScenarioCard key={e} titleText={e.title} bgImg={e.background_image} iconImg={e.icon}/>
-            )
-        })
+
         return(
             <ScenarioWrapper id="scenario-cards">
                 {        scenarioOutputs.map((e)=>{
-            return (
-                <ScenarioCard key={e.title} titleText={e.title} bgImg={e.background_image} iconImg={e.icon}/>
-            )
+                    return (
+                        <ScenarioCard 
+                            key={e.title} 
+                            titleText={e.title} 
+                            bgImg={e.background_image} 
+                            iconImg={e.icon}
+                            setUpCallBack={this.props.setUpCallBack}
+                            />
+                            
+                    )
         })}
+
             </ScenarioWrapper>
         );
     }

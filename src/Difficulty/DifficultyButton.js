@@ -34,6 +34,7 @@ class DifficultyButton extends Component{
             clicked:false
         }
     }
+    //toggles the chaos icons display via callback function to the stateful Campaign component
     handleClick=()=>{
         this.setState({clicked:!this.state.clicked},()=>{
             this.props.callback(this.props.setting);

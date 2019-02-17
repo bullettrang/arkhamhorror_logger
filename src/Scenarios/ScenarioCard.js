@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-//import titleBackgroundImage from './assets/thegatheringtitleimg.jpg';
 import ScenarioTitle from './ScenarioTitle';
+import {SetUpButton} from '../SetUpButton';
 const ScenarioCardWrapper= styled.div`
     width:33.3%;
     display:block;
@@ -42,7 +42,7 @@ const ScenarioCard =(props)=>{
                 <AgendaProfilePic bgImg={props.bgImg}/>
             </div>
             <p>{"rating system"}</p>
-            <p>{"Set Up Instructions"}</p>
+            <SetUpButton clicked={props.setUpCallBack}scenarioLabel={props.titleText}/>
         </ScenarioCardWrapper>
     );
 }

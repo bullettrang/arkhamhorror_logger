@@ -21,6 +21,16 @@ import tablet from '../assets/tablet.png';
 import tentacle from '../assets/expertbutton.png';
 import eldersign from '../assets/easybutton.png';
 
+
+//Scenario title consts
+export const NOZ_TITLES={
+    THE_GATHERING:'The Gathering',
+    THE_MIDNIGHT_MASKS:'The Midnight Masks',
+    THE_DEVOURER_WITHIN:'The Devourer Below'
+}
+
+
+
 //Scenario objects
 const ScenarioObjs=[
     {   
@@ -29,17 +39,17 @@ const ScenarioObjs=[
            scenarios: 
             [
                     {
-                        title:'The Gathering',
+                        title:NOZ_TITLES.THE_GATHERING,
                         icon:gatheringIcon,
                         background_image:gatheringBackgroundImage   ,
                     },
                     {
-                        title:'The Midnight Masks',
+                        title:NOZ_TITLES.THE_MIDNIGHT_MASKS,
                         icon:mMasksIcon,
                         background_image:midnightMasksBackgroundImage,
                     },
                     {
-                        title:'The Devourer Below',
+                        title:NOZ_TITLES.THE_DEVOURER_WITHIN,
                         icon:devourerIcon,
                         background_image:devourerBackdgroundImage,
                     },
@@ -62,10 +72,17 @@ const ScenarioObjs=[
                     label:'expert',
                     tokens:[zero,minusOne,minusOne,minusTwo,minusTwo,minusThree,minusThree,minusFour,minusFour,minusFive,minusSix,minusEight,skull,skull,cultist,tablet,tentacle,eldersign]
                 },
-            ]    
-        }
-
+            ],
+            setup:
+            [
+                {
+                label:NOZ_TITLES.THE_GATHERING,
+                procedures:['Gather all cards from the following encounter sets: The Gathering, Rats, Ghouls, Striking Fear, Ancient Evils, and Chilling Cold','Put the Study location into play. Set each other location aside, out of play. Each investigator begins play in the Study.',
+            'Set the Ghoul Priest and Lita Chantler cards aside, out of play.','Shuffle the remainder of the encounter cards (from the previously gathered encounter sets) to form the encounter deck.']
+            }
+        ]
 },
+    }
 ];
 
 export default ScenarioObjs;
