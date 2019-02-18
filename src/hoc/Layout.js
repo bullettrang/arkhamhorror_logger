@@ -1,6 +1,7 @@
 import React from 'react';
 import Aux from './Aux.js';
 import Header from '../Header/Header';
+
 const layout = (props)=>(
     <Aux>
         <Header/>

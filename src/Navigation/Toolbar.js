@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import ElderSignLogo from '../assets/elderSignLogo.png';
 //https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/t/lecture/8125730?start=0
 
 const ToolbarWrapper = styled.header`
     width:100%;
-    background-color:purple;
     display:flex;
     position:fixed;
     top:0;
@@ -18,14 +17,18 @@ const ToolbarWrapper = styled.header`
     nav{
         height:100%;
     }
-`
+    img{
+        width:.6em;
+        height:.6em;
+    }
 
+`
+//TODO: RENDER eldersign logo using span
 const toolbar = (props)=>(
     <ToolbarWrapper>
-        <div>Menu</div>
-        <div>LOGO</div>
+        <div>Menu<span><img src={ElderSignLogo}/></span></div>
         <nav>
-
+        
         </nav>
     </ToolbarWrapper>
 );
