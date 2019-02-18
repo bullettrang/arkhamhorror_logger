@@ -3,16 +3,18 @@ import styled from 'styled-components';
 import BannerImg from '../assets/banner.jpg';
 
 import LogoImg from '../assets/lcgLogo.png'
-
-const Banner =styled.header`
-width:100%;
-background-image:url(${BannerImg});
-position:fixed;
-top:0;
-left:0;
-height:280px;
-background-repeat: no-repeat;
-background-position: left 0px top -330px;
+import Toolbar from '../Navigation/Toolbar';
+const Banner =styled.div`
+  width:100%;
+  background-image:url(${BannerImg});
+  position:fixed;
+  top:0;
+  left:0;
+  height:280px;
+  background-repeat: no-repeat;
+  background-position: left 0px top -330px;
+  box-sizing:border-box;
+  text-align:center;
 `;
 
 //TODO: Add media queries for mobile
@@ -26,7 +28,9 @@ const Logo = styled.img.attrs({
   `
 
   const Header =()=>{
-      return(<Banner>
+      return(
+      <Banner>
+        <Toolbar/>
           <Logo/>
       </Banner>);
   }

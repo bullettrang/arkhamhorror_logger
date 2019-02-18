@@ -4,10 +4,8 @@ import Campaign from './Campaign';
 import Header from './Header/Header';
 import styled from 'styled-components';
 import LedgerImg from './assets/blackleatherbackground.png'
+import Layout from './hoc/Layout';
 
-//old logo css settings
-// top:80px;
-// width:450px
  const MainContainer = styled.div`
   position:relative;
   top:250px;
@@ -21,17 +19,17 @@ import LedgerImg from './assets/blackleatherbackground.png'
   flex-wrap:wrap;
   padding-top:3em;
   box-sizing: content-box;
+  text-align:center;
  `
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header/>
-        <MainContainer>
-          <Campaign/>
-        </MainContainer>
-      </div>
+        <Layout>
+          <MainContainer>
+            <Campaign/>
+          </MainContainer>
+        </Layout>
     );
   }
 }
