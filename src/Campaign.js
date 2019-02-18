@@ -90,7 +90,7 @@ class Campaign extends Component{
         }
     }
 
-
+    //TODO: wrap instructionOutput into its own component
     render(){
         let instructionOutput = this.state.displayedSetUp !==null ? this.state.displayedSetUp.map(e=><li key={e}>{e}</li>) :null;
         let tokenOutput = this.state.displayedTokens===null ? null: this.state.displayedTokens;
@@ -98,8 +98,8 @@ class Campaign extends Component{
         <CampaignContainer className="campaign">
             <CampaignHeader>Night of the Zealot</CampaignHeader>
             <ScenarioCards scenarioObjs={this.state.scenarios} setUpCallBack={this.setUpHandler}/>
-            <DifficultyMenu callback={this.showTokens}/>
             {<ul>{instructionOutput}</ul>}
+            <DifficultyMenu callback={this.showTokens}/>
             <TokenContainer>
                 {   
                     tokenOutput!==null?

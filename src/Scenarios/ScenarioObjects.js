@@ -79,6 +79,11 @@ const ScenarioObjs=[
                 label:NOZ_TITLES.THE_GATHERING,
                 procedures:['Gather all cards from the following encounter sets: The Gathering, Rats, Ghouls, Striking Fear, Ancient Evils, and Chilling Cold','Put the Study location into play. Set each other location aside, out of play. Each investigator begins play in the Study.',
             'Set the Ghoul Priest and Lita Chantler cards aside, out of play.','Shuffle the remainder of the encounter cards (from the previously gathered encounter sets) to form the encounter deck.']
+            },
+            {
+                label:NOZ_TITLES.THE_MIDNIGHT_MASKS,
+                procedures:['Gather all cards from the following encounter sets: The Midnight Masks, Chilling Cold, Nightgaunts, Dark Cult, and Locked Doors.',
+            'Set the Cult of Umôrdhoth encounter set aside as a separate “Cultist deck,” and shuffle it.','Choose one of the two Downtown locations and one of the two Southside locations at random and put them into play. Remove the other versions of Downtown and Southside from the game. Then, put the Northside, Easttown, Rivertown, St. Mary’s Hospital, Graveyard, Miskatonic University, and Your House locations into play. ']
             }
         ]
 },

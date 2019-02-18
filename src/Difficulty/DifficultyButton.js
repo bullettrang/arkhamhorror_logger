@@ -20,19 +20,43 @@ const DiffButton = styled.button`
     margin: 5% 5%;
     vertical-align: top;
     background:none;
+    opacity: ${props=> props.opacity ===1? 1:.5}
     img{
         display:block;
         width:50px
         height:50px
     }
+
 `
 
 class DifficultyButton extends Component{
     constructor(props){
         super(props);
         this.state={
-            clicked:false
+            clicked:false,
+            opacity:1
         }
+        this.ref=React.createRef();
+    }
+    
+    componentDidMount(){
+        //add event lister to button
+        this.ref.addEventListener('mouseover',this.mouseOverHandler);
+        this.ref.addEventListener('mouseleave',this.mouseLeaveHandler);
+    }
+
+    componentWillUnmount(){
+        this.ref.removeEventListener('mouseover',this.mouseOverHandler);
+        this.ref.removeEventListener('mouseleave',this.mouseLeaveHandler);
+    }
+
+    mouseOverHandler=()=>{
+        console.log('mouseOverHandler')
+        this.setState({opacity:0.5});
+    }
+    mouseLeaveHandler=()=>{
+        console.log('mouseLeaveHandler')
+        this.setState({opacity:1});
     }
     //toggles the chaos icons display via callback function to the stateful Campaign component
     handleClick=()=>{
@@ -43,8 +67,10 @@ class DifficultyButton extends Component{
     render(){
         return(
             <ButtonWrapper>
-                <DiffButton 
-                    onClick={this.handleClick}>
+                <DiffButton
+                    ref={ref=>this.ref=ref} 
+                    onClick={this.handleClick}
+                    opacity={this.state.opacity}>
                         <IconImg 
                             src={this.props.src}/>
                 </DiffButton>
