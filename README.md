@@ -19,7 +19,8 @@ User Stories
 
 -
 
-
+//TO RUN
+'npm start' in terminal
 
 
 
