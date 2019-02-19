@@ -25,6 +25,11 @@ const NavLinkWrapper = styled.nav`
     justify-content:flex-start;
     align-items:space-evenly;
 
+    @media (max-width: 500px) {
+        justify-content:center;
+        align-items:center;
+      }
+
     a{
         margin: 3em 2em; 
         height:100%;
