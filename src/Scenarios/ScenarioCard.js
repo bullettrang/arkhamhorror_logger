@@ -6,15 +6,12 @@ const ScenarioCardWrapper= styled.div`
     width:33.3%;
     display:block;
     margin:1em;
-    
     @media (max-width: 500px) {
         min-width:300px;
       }
-    
     p{
         font-family: 'Crimson Text', serif;
-    }
-    
+    }  
 `
 
 //https://pagecrafter.com/maintain-aspect-ratio-for-html-element-using-only-css-in-a-responsive-design/
@@ -27,7 +24,6 @@ const AgendaProfilePic = styled.div`
     padding-bottom: 100%;
     background-size: 100%;
     max-width:100%;
-
     height:auto;
 `;
 

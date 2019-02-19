@@ -18,13 +18,13 @@ const ToolbarWrapper = styled.header`
     background:#f7f7f7;
 `
 
+//Added media query adjustments for navbar items
 const NavLinkWrapper = styled.nav`
     width:100%;
     display:flex;
     flex-direction:row;
     justify-content:flex-start;
     align-items:space-evenly;
-
     a{
         margin: 3em 2em; 
         height:100%;
@@ -48,7 +48,6 @@ const NavLinkWrapper = styled.nav`
 //TODO: RENDER eldersign logo using span
 const toolbar = (props)=>(
     <ToolbarWrapper>
-        
         <NavLinkWrapper>
         <a href=""><span><img src={ElderSignLogo}/></span>Menu</a>
         <a href="">Logger</a>
