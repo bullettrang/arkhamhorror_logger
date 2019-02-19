@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Campaign log
 
 User Stories
+
 -users can select a campaign (Night of the Zealot, Dunwich, etc)
 
 -users can add chosen investigators for the campaign from a list 
@@ -14,9 +15,12 @@ User Stories
 -users can log their scenario results: xp earned, trauma gained, Resolution, defeated by (i.e. treachery, enemy)
 
 -users can record enemy kills to their investigator
-(‘ [Investigator_name] defeated [enemy_name] by [item]
+(‘ [Investigator_name] defeated [enemy_name] by [item] )
 
+-
 
+//TO RUN
+'npm start' in terminal
 
 
 
@@ -24,8 +28,12 @@ User Stories
 
 //TODO: 
 
--Do ‘Night of the Zealot’  Campaign
+//Add Arkhamdb requests
 
--‘The Gathering’
--‘Midnight Masks’
--‘Devourer Within’
+//Add NAVBAR
+
+//campaign logger
+
+//skill check logger
+
+//character logger
