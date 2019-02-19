@@ -30,3 +30,9 @@ User Stories
 //Add Arkhamdb requests
 
 //Add NAVBAR
+
+//campaign logger
+
+//skill check logger
+
+//character logger
