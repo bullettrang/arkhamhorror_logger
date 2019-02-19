@@ -14,22 +14,51 @@ const ToolbarWrapper = styled.header`
     padding:0 20px;
     box-sizing:border-box;
     z-index:90;
-    nav{
+    height:2em;
+    background:#f7f7f7;
+`
+
+const NavLinkWrapper = styled.nav`
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:space-evenly;
+
+    a{
+        margin: 3em 2em; 
         height:100%;
+        text-decoration: none;
+        font-family: 'Crimson Text', serif;
+        color:black;
+        @media (max-width: 500px) {
+            margin: .5em .5em; 
+          }
     }
     img{
-        width:.6em;
-        height:.6em;
+        position:relative;
+        left:-2em;
+        width:1em;
+        height:1em;
+        @media (max-width: 500px) {
+            left:-.5em; 
+          }
     }
-
 `
 //TODO: RENDER eldersign logo using span
 const toolbar = (props)=>(
     <ToolbarWrapper>
-        <div>Menu<span><img src={ElderSignLogo}/></span></div>
-        <nav>
         
+        <NavLinkWrapper>
+        <a href=""><span><img src={ElderSignLogo}/></span>Menu</a>
+        <a href="">Logger</a>
+        <a href="">Records</a>
+        </NavLinkWrapper>
+        <div>
+        <nav>
+
         </nav>
+        </div>
     </ToolbarWrapper>
 );
 

@@ -12,7 +12,7 @@ const Banner =styled.div`
   left:0;
   height:280px;
   background-repeat: no-repeat;
-  background-position: left 0px top -330px;
+  background-position: left 0px top -308px;
   box-sizing:border-box;
   text-align:center;
 `;
