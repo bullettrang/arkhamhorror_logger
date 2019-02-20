@@ -61,8 +61,6 @@ class Campaign extends Component{
     
     showTokens(setting){
             this.setState({chosenSetting:setting});
-            //TODO: NOt displaying smoothly
-
             for(let obj of this.state.difficulties){
                 if(obj.label===this.state.chosenSetting){
                     console.log('found chosen setting');
