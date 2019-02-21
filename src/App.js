@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Campaign from './Campaign';
-import Header from './Header/Header';
+import Home from './Home';
 import styled from 'styled-components';
 import LedgerImg from './assets/blackleatherbackground.png'
 import Layout from './hoc/Layout';
@@ -26,9 +26,7 @@ class App extends Component {
   render() {
     return (
         <Layout>
-          <MainContainer>
-            <Campaign/>
-          </MainContainer>
+            <Home/>
         </Layout>
     );
   }

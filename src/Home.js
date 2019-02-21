@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import LedgerImg from './assets/blackleatherbackground.png'
 import Campaign from './Campaign';
-
+import LogContainer from './Logger/LogContainer';
 const MainContainer = styled.div`
 position:relative;
 top:250px;
@@ -23,6 +23,7 @@ const Home =()=>{
     return(
         <MainContainer>
             <Campaign/>
+            <LogContainer/>
         </MainContainer>
     )
 };
