@@ -37,3 +37,5 @@ User Stories
 //skill check logger
 
 //character logger
+
+//Scenario choice polling (i.e. like TellTale Games credit to Zzorba)
