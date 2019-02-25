@@ -30,13 +30,13 @@ User Stories
 
 <table>
 
-<th>Add Arkhamdb requests<th>
-<td>campaign logger</td>
+<tr><th>Add Arkhamdb requests</th></tr>
+<tr>campaign logger</tr>
 
-<td>skill check logger</td>
+<tr>skill check logger</tr>
 
-<td>character logger</td>
+<tr>character logger</tr>
 
-<td>Scenario choice polling (i.e. like TellTale Games credit to Zzorba) </td>
+<tr>Scenario choice polling (i.e. like TellTale Games credit to Zzorba) </tr>
 
 </table>
