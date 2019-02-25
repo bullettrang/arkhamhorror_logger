@@ -19,7 +19,7 @@ User Stories
 -users can record enemy kills to their investigator
 (‘ [Investigator_name] defeated [enemy_name] by [item] )
 
--
+
 
 //TO RUN
 'npm start' in terminal
@@ -28,16 +28,15 @@ User Stories
 
 
 
-//TODO: 
+<table>
 
-//Add Arkhamdb requests
+<th>Add Arkhamdb requests<th>
+<td>campaign logger</td>
 
-//Add NAVBAR
+<td>skill check logger</td>
 
-//campaign logger
+<td>character logger</td>
 
-//skill check logger
+<td>Scenario choice polling (i.e. like TellTale Games credit to Zzorba) </td>
 
-//character logger
-
-//Scenario choice polling (i.e. like TellTale Games credit to Zzorba)
+</table>
