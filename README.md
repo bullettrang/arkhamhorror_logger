@@ -1,32 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Campaign log
+<table>
+  <tr><th>User Stories</th></tr>
 
-User Stories
+<tr><td>users can select a campaign (Night of the Zealot, Dunwich, etc)</td></tr>
 
--users can select a campaign (Night of the Zealot, Dunwich, etc)
+<tr><td>users can add chosen investigators for the campaign from a list</td></tr>
 
--users can add chosen investigators for the campaign from a list 
+<tr><td>users can add/remove chaos tokens for their campaign</td></tr>
 
--users can add/remove chaos tokens for their campaign
+<tr><td>users can log their campaign decisions (i.e. Dunwich ‘searched for Dr. Morgan first’)</td></tr> 
 
--users can log their campaign decisions (i.e. Dunwich ‘searched for Dr. Morgan first’), 
-
--users can log their scenario results: xp earned, trauma gained, Resolution, defeated by (i.e. treachery, enemy)
-
--Tally scenario choices
-
--users can record enemy kills to their investigator
-(‘ [Investigator_name] defeated [enemy_name] by [item] )
+<tr><td>users can log their scenario results: xp earned, trauma gained, Resolution, defeated by (i.e. treachery, enemy)</td></tr>
+<tr><td>Tally scenario choices</tr></td>
+<tr><td>users can record enemy kills to their investigator [Investigator_name] defeated [enemy_name] by [item] )</td></tr>
 
 
 
-//TO RUN
 'npm start' in terminal
-
-
-
-
 
 <table>
 
