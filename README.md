@@ -14,6 +14,8 @@ User Stories
 
 -users can log their scenario results: xp earned, trauma gained, Resolution, defeated by (i.e. treachery, enemy)
 
+-Tally scenario choices
+
 -users can record enemy kills to their investigator
 (‘ [Investigator_name] defeated [enemy_name] by [item] )
 
