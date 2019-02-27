@@ -21,12 +21,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <table>
 
-<tr><th>Add Arkhamdb requests</th></tr>
+<tr><td>Add Arkhamdb requests</td></tr>
 
 <tr><td>skill check logger</td></tr>
-
-<tr><td>character logger</td></tr>
 
 <tr><td>Scenario choice polling (i.e. like TellTale Games credit to Zzorba)</td> </tr>
 
 </table>
+
