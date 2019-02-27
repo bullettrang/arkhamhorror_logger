@@ -23,5 +23,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  <tr><td>Create mobile version (use React Native? Swift?) </td></tr>
 </table>
 
-TO RUN
+<h1>TO RUN</h1>
 'npm start' in terminal
+
+
+<h2>Styling Choices</h2>
+<h3>Using Styled-components</h3>
