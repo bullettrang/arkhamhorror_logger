@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 </table>
 
 
-'npm start' in terminal
+
 
 <table>
 <tr><th>Technical TODOs (Basically stuff I need to learn/explore)</th></tr>
@@ -23,3 +23,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  <tr><td>Create mobile version (use React Native? Swift?) </td></tr>
 </table>
 
+TO RUN
+'npm start' in terminal
