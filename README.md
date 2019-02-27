@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <tr><td>users can log their campaign decisions (i.e. Dunwich ‘searched for Dr. Morgan first’)</td></tr> 
 
 <tr><td>users can log their scenario results: xp earned, trauma gained, Resolution, defeated by (i.e. treachery, enemy)</td></tr>
-<tr><td>Tally scenario choices</tr></td>
+<tr><td>Tally scenario choices</td></tr>
 <tr><td>users can record enemy kills to their investigator [Investigator_name] defeated [enemy_name] by [item] )</td></tr>
 
 
