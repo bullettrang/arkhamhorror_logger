@@ -16,7 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <table>
 <tr><th>Technical TODOs (Basically stuff I need to learn/explore)</th></tr>
  <tr><td>Start Testing with JEST & Enzyme</td></tr>
-<tr><td>Queries Arkhamdb (Learn back-end, NodeJS, Express, explore backend frameworks/libraries that work with ReactJS</td></tr>
+<tr><td>Queries Arkhamdb (Learn back-end, NodeJS, Express, explore backend frameworks/libraries that work with ReactJS) </td></tr>
  <tr><td>Use Google Firebase for database?</td></tr>
  <tr><td>Create mobile version (use React Native? Swift?) </td></tr>
 </table>
