@@ -2,9 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <table>
  <tr><th>User Stories</th></tr>
+ <tr><td>Users can register & login</td></tr>
 <tr><td>users can select a campaign (Night of the Zealot, Dunwich, etc)</td></tr>
 <tr><td>users can log their campaign decisions (i.e. Dunwich ‘searched for Dr. Morgan first’)</td></tr>
-<tr><td>users can see percentage values of choices made(i.e. Dunwich ‘searched for Dr. Morgan first’)</td></tr> 
+<tr><td>users can see percentage values of choices made by other users(i.e. 55% of users went searching for Dr. Rice First(started Extracurricular Activities )</td></tr> 
 <tr><td>users can log their scenario results: xp earned, trauma gained, Resolution, defeated by (i.e. treachery, enemy)</td></tr>
 <tr><td>users can record enemy kills to their investigator [Investigator_name] defeated [enemy_name] by [item] )</td></tr>
 </table>
@@ -13,12 +14,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 'npm start' in terminal
 
 <table>
-
-<tr><td>Add Arkhamdb requests</td></tr>
-
-<tr><td>skill check logger</td></tr>
-
-<tr><td>Scenario choice polling (i.e. like TellTale Games credit to Zzorba)</td> </tr>
-
+<tr><th>Technical TODOs (Basically stuff I need to learn/explore)</th></tr>
+ <tr><td>Start Testing with JEST & Enzyme</td></tr>
+<tr><td>Queries Arkhamdb (Learn back-end, NodeJS, Express, explore backend frameworks/libraries that work with ReactJS</td></tr>
+ <tr><td>Use firebase for database?</td></tr>
 </table>
 
