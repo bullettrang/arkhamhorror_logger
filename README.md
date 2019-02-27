@@ -3,11 +3,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <table>
  <tr><th>User Stories</th></tr>
 <tr><td>users can select a campaign (Night of the Zealot, Dunwich, etc)</td></tr>
-<tr><td>users can log their campaign decisions (i.e. Dunwich ‘searched for Dr. Morgan first’)</td></tr> 
+<tr><td>users can log their campaign decisions (i.e. Dunwich ‘searched for Dr. Morgan first’)</td></tr>
+ <tr><td>users can see percentage values of choices made(i.e. Dunwich ‘searched for Dr. Morgan first’)</td></tr> 
 <tr><td>users can log their scenario results: xp earned, trauma gained, Resolution, defeated by (i.e. treachery, enemy)</td></tr>
 <tr><td>Tally scenario choices</td></tr>
 <tr><td>users can record enemy kills to their investigator [Investigator_name] defeated [enemy_name] by [item] )</td></tr>
-
+</table>
 
 
 'npm start' in terminal
